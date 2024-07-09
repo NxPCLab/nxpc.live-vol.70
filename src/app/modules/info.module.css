@@ -1,0 +1,302 @@
+.scrollableContainer {
+    position: relative;
+    font-family: 'Noto Serif JP', serif;
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.rightText {
+    color: #ff3c00;
+    position: fixed;
+    top: 15px;
+    right: 0;
+    writing-mode: vertical-rl;
+    z-index: 3;
+}
+
+@media (min-width: 375px) {
+    .rightText {
+        font-size: calc(50px + (46 * (100vw - 375px) / 125));
+        right: -8px;
+        top: 20px;
+    }
+}
+
+@media(min-width:500px) {
+    .rightText {
+        font-size: calc(96px + (64 * (100vw - 500px) / 1200));
+        left: calc(330px + (1100 * (100vw - 500px) / 1200));
+    }
+}
+
+.leftText,
+.timeText {
+    color: #ff3c00;
+    position: absolute;
+    writing-mode: vertical-rl;
+    font-weight: bold;
+    z-index: 2;
+    /* border: solid; */
+}
+
+@media (min-width:375px) {
+
+    .leftText,
+    .timeText {
+        letter-spacing: 0px;
+        left: calc(-16 * (100vw - 375px) / 125);
+        margin-top: calc(40px + (30 * (100vw - 375px) / 125));
+        font-size: calc(40px + (36 * (100vw - 375px) / 125));
+    }
+
+    .timeText {
+        margin-top: calc(740px + (220 * (100vw - 375px) / 125));
+    }
+}
+
+@media(min-width:500px) {
+
+    .leftText,
+    .timeText {
+        left: -16px;
+        margin-top: 70px;
+        letter-spacing: 5px;
+        font-size: calc(76px + (34 * (100vw - 500px) / 1200));
+    }
+
+    .timeText {
+        letter-spacing: 0px;
+        margin-top: 960px;
+    }
+}
+
+.header a:first-child {
+    margin-left: 0;
+}
+
+.figureContainer {
+    position: relative;
+    width: 100%;
+    margin-left: 30px;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.box {
+    color: #ff3c00;
+    height: 495px;
+    position: relative;
+    width: 875px;
+    left: 30px;
+}
+
+@media (min-width:1351px) {
+    .box {
+        left: calc(680px + (20 * (100vw - 1351px)/100));
+        bottom: 165px;
+    }
+}
+
+.div {
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.textWrapper {
+    color: #ff3c00;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    width: 547px;
+}
+
+.nxpcText {
+    color: #000000;
+    font-weight: bold;
+    position: absolute;
+    margin-bottom: 30px;
+    width: calc(550px + (75 * (100vw - 920px) / 100));
+}
+
+@media (min-width: 1351px) {
+    .nxpcText {
+        width: calc(650px);
+        font-size: 17.5px;
+    }
+}
+
+.infoBox {
+    position: absolute;
+}
+
+.addressText,
+.googleMapText {
+    align-items: center;
+    justify-content: center;
+    background-color: #00ff664c;
+    color: #ff3c00;
+    position: relative;
+    font-size: 13px;
+    padding-left: 20px;
+    text-align: left;
+    padding-top: 4px;
+    margin-bottom: 20px;
+    z-index: 2;
+}
+
+.googleMapText {
+    background-color: #ff3c00dd;
+    color: #ffffff;
+    opacity: 0.8;
+}
+
+@media (min-width: 375px) {
+    .infoBox {
+        top: calc(620px + (130 * (100vw - 375px) / 125));
+    }
+
+    .addressText {
+        width: 320px;
+        height: 70px;
+        font-size: 13px;
+    }
+
+    .googleMapText {
+        width: 180px;
+        height: 30px;
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 500px) {
+    .infoBox {
+        top: calc(750px + (-50 * (100vw - 500px) / 1200));
+    }
+
+    .addressText {
+        width: calc(320px + (220 * (100vw - 500px) / 1200));
+        height: calc(70px + (50 * (100vw - 500px) / 1200));
+        font-size: calc(13px + (8 * (100vw - 500px) / 1200));
+    }
+
+    .googleMapText {
+        width: calc(180px + (60 * (100vw - 500px) / 1200));
+        height: calc(30px + (20 * (100vw - 500px)/ 1200));
+        font-size: calc(16px + (10 * (100vw - 500px) / 1200));
+    }
+}
+
+.googleMap {
+    position: absolute;
+    right: 0px;
+    border: solid;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid;
+    color: grey;
+    opacity: 0.85;
+    z-index: 1;
+}
+
+.timeBoxWrapper {
+    position: absolute;
+    right: 0;
+    margin-top: 950px;
+}
+
+.timeTableBox {
+    writing-mode: horizontal-tb;
+    width: 600px;
+    margin-left: 50px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0, 0.05);
+    opacity: 0.8;
+    padding: 10px;
+    padding-top: 0px;
+    border: solid;
+    box-sizing: border-box;
+}
+
+.textWrapper {
+    padding: 20px;
+    padding-top: 0px;
+}
+
+.dayTime {
+    color: #ff3c00;
+    font-weight: bold;
+}
+
+.text {
+    color: #ff3c00;
+    margin-left: 10px;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+@media (min-width: 375px) {
+    .googleMap {
+        margin-top: calc(40px + (30 * (100vw - 375px) / 125));
+        width: calc(300px + (70 * (100vw - 375px) / 125));
+        height: calc(486px + (114 * (100vw - 375px) / 125));
+    }
+
+    .timeTableBox {
+        margin-top: calc(40px + (30 * (100vw - 375px) / 125));
+        width: calc(300px + (70 * (100vw - 375px) / 125));
+        height: calc(550px + (114 * (100vw - 375px) / 125));
+    }
+
+    .timeBoxWrapper {
+        margin-top: calc(700px + (180 * (100vw - 375px) / 125));
+        height: calc((550px + (114 * (100vw - 375px) / 125)) * 1.2);
+    }
+
+    .dayTime {
+        margin-left: 10px;
+        margin-top: 15px;
+        font-size: calc(25px + (5 * (100vw - 375px) / 125));
+    }
+
+    .text {
+        font-size: calc(15px + (5 * (100vw - 375px) / 125));
+        margin: 10px;
+        margin-left: 10px;
+    }
+}
+
+@media (min-width: 500px) {
+    .googleMap {
+        margin-top: 70px;
+        width: calc(370px + (600 * (100vw - 500px) / 1200));
+        height: calc(600px + (145 * (100vw - 500px) / 1200));
+    }
+
+    .timeTableBox {
+        width: calc(370px + (600 * (100vw - 500px) / 1200));
+        height: calc(770px + (300 * (100vw - 500px) / 900));
+    }
+
+    .timeBoxWrapper {
+        margin-top: calc(880px - (280 * (100vw - 500px) / 1200));
+        height: calc((770px + (300 * (100vw - 500px) / 900)) * 1.2);
+    }
+
+    .dayTime {
+        margin-left: calc(10px + (30 * (100vw - 500px) / 1200));
+        margin-top: 30px;
+        font-size: calc(30px + (20 * (100vw - 500px) / 1200));
+    }
+
+    .text {
+        font-size: calc(20px + (10 * (100vw - 500px) / 1200));
+        margin: calc(20px + (10 * (100vw - 500px) / 1200));
+        margin-left: calc(10px + (30 * (100vw - 500px) / 1200));
+    }
+}

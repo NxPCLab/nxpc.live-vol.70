@@ -1,0 +1,10 @@
+.list {
+    display: flex;
+    gap: 3em;
+}
+
+.icon {
+    color: #FF3C00;
+    width: 26px;
+    height: 100%;
+}
